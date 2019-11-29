@@ -1,0 +1,128 @@
+.container a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+
+    justify-content: space-between;
+    padding: 3rem;
+    font-family:'Italiana', serif;
+    font-size: 36px;
+}
+.nav {
+    display: flex;
+    }
+
+.nav a{
+    text-decoration: none;
+    color:#000 ;
+
+}    
+
+.nav a:visited{
+    color: #000;
+}
+.nav div{
+    margin: 0 30px;
+    position: relative;
+}
+.home{
+    font-family:'Italiana', serif;
+    font-size: 36px;
+}
+.link-backgournd::after{
+    z-index: -1;
+    position: absolute;
+    content: '';
+    left: 35px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(132, 46, 46, 0.26);
+    
+}
+.portfolio::after{
+    background-color:rgba(242, 185, 185, 0.42);
+    left: 76px;
+}
+
+.link-backgournd:hover {
+    filter: grayscale(0%) brightness(100%);
+    transform: scale(1.01);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.container div{
+margin-bottom: 60px;
+
+}
+
+.item-title{
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 22px;
+    background: rgba(196, 196, 196, 0.08);
+
+}
+
+.item-link{
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 22px;
+    background: rgba(196, 196, 196, 0.08);
+}
+
+.item-link:hover{
+    filter: grayscale(80%) brightness(80%);
+    transform: scale(1.01);
+
+}
+.footer{
+    justify-content: center;
+    background: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    display: flex;
+    padding:20px 0;
+}
+
+.alaleht{
+
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.lisa{
+    margin-left: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px; 
+    margin-top: -22px;
+   
+       
+}
+
+.kirjeldus{
+    margin-top: 20px;
+}
+
+.item-img{
+    margin: 0 1.2rem;
+    height: 400px;
+    width: 266px;
+    object-fit: cover;
+    object-position: center;
+}
