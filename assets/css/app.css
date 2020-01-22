@@ -1,3 +1,9 @@
+.taust{
+    background-image: url("/assets/img/punane1.svg")
+    
+
+}
+
 .container a{
     font-size: 18px;
     text-decoration: none;
@@ -28,6 +34,8 @@
 .nav div{
     margin: 0 30px;
     position: relative;
+    
+    
 }
 .home{
     font-family:'Italiana', serif;
@@ -41,11 +49,13 @@
     height: 100%;
     width: 100%;
     background-color: rgba(132, 46, 46, 0.26);
+    border-radius: 20px;
     
 }
 .portfolio::after{
     background-color:rgba(242, 185, 185, 0.42);
     left: 76px;
+    
 }
 
 .link-backgournd:hover {
@@ -72,6 +82,7 @@ margin-bottom: 60px;
     text-align: center;
     margin-top: 22px;
     background: rgba(196, 196, 196, 0.08);
+    
 
 }
 
@@ -81,12 +92,14 @@ margin-bottom: 60px;
     width: 100%;
     text-align: center;
     margin-top: 22px;
-    background: rgba(196, 196, 196, 0.08);
+    background: #EBDBDD;
+    border-radius: 5px;
 }
 
 .item-link:hover{
-    filter: grayscale(80%) brightness(80%);
-    transform: scale(1.01);
+    
+    transform: scale(1.02);
+    background: #E71856;
 
 }
 .footer{
@@ -117,6 +130,7 @@ margin-bottom: 60px;
 
 .kirjeldus{
     margin-top: 20px;
+   margin-left: 30px;
 }
 
 .item-img{
@@ -125,4 +139,5 @@ margin-bottom: 60px;
     width: 266px;
     object-fit: cover;
     object-position: center;
+    filter: grayscale(100%) brightness(100%) ;
 }
