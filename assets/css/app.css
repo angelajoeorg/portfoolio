@@ -1,11 +1,27 @@
-.taust{
-    background-image: url("/assets/img/punane1.svg")
-    
+html{
+    height: 100%;
+}
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.taust{
+    background-image: url("/assets/img/punane1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container a{
-    font-size: 18px;
+    /* font-size: 18px; */
     text-decoration: none;
     color: #000;
     font-family: 'Montserrat', sans-serif;
@@ -64,14 +80,16 @@
 }
 .container{
     max-width: 1200px;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-self: center;
 
 }
 .container div{
 margin-bottom: 60px;
+padding: 10px;
 
 }
 
@@ -82,11 +100,14 @@ margin-bottom: 60px;
     text-align: center;
     margin-top: 22px;
     background: rgba(196, 196, 196, 0.08);
+    font-weight: 900;
     
 
 }
 
+
 .item-link{
+    font-size: 18px;
     display: block;
     padding: 20px 0;
     width: 100%;
@@ -127,11 +148,25 @@ margin-bottom: 60px;
    
        
 }
+.veeb{
+    font-size: 16px;
+    font-weight: 900;
+    /* background: red; */
+}
+
+.veeb:hover{
+    transform: scale(2.02);
+    color: #E71856;
+    font-weight: 900;
+    }
 
 .kirjeldus{
     margin-top: 20px;
    margin-left: 30px;
+   line-height: 2;
+   
 }
+
 
 .item-img{
     margin: 0 1.2rem;
@@ -141,3 +176,11 @@ margin-bottom: 60px;
     object-position: center;
     filter: grayscale(100%) brightness(100%) ;
 }
+
+@media only screen and (max-width: 750px)
+{
+    .container, .header{
+        flex-wrap: wrap;
+    }
+}
+
