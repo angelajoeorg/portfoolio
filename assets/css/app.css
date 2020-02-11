@@ -10,12 +10,12 @@ html{
 body{
     display:flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     justify-content: space-between;
 }
 
 .taust{
-    background-image: url("/assets/img/punane1.svg");
+    background-image: url("/assets/img/roosa5-02.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -36,6 +36,7 @@ body{
 }
 .nav {
     display: flex;
+    flex-wrap: wrap;
     }
 
 .nav a{
@@ -64,7 +65,8 @@ body{
     left: 35px;
     height: 100%;
     width: 100%;
-    background-color: rgba(132, 46, 46, 0.26);
+    background-color:rgba(242, 185, 185, 0.42);
+    /* background-color: rgba(132, 46, 46, 0.26); */
     border-radius: 20px;
     
 }
@@ -99,7 +101,8 @@ padding: 10px;
     width: 100%;
     text-align: center;
     margin-top: 22px;
-    background: rgba(196, 196, 196, 0.08);
+    background:rgba(132, 46, 46, 0.26)
+    /* background: rgba(196, 196, 196, 0.08); */
     font-weight: 900;
     
 
@@ -120,7 +123,7 @@ padding: 10px;
 .item-link:hover{
     
     transform: scale(1.02);
-    background: #E71856;
+    background: #E51F59;
 
 }
 .footer{
@@ -130,6 +133,7 @@ padding: 10px;
     font-size: 12px;
     display: flex;
     padding:20px 0;
+    width: 100%;
 }
 
 .alaleht{
@@ -156,8 +160,9 @@ padding: 10px;
 
 .veeb:hover{
     transform: scale(2.02);
-    color: #E71856;
+    color: #E51F59;
     font-weight: 900;
+    font-size: 17px;
     }
 
 .kirjeldus{
@@ -181,6 +186,10 @@ padding: 10px;
 {
     .container, .header{
         flex-wrap: wrap;
+    }
+    .portfolio::after{
+        left: 0;
+        top: 0;
     }
 }
 
